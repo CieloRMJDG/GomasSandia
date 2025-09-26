@@ -26,7 +26,7 @@ Ventiladores y extractores para control de temperatura.
 Sombrillas motorizadas o mallas retráctiles.
 Relés de control y fuente de alimentación segura.
 
-## Controladores
+### Controladores
 
 ESP32: lectura de sensores y control de actuadores.
 Raspberry Pi (opcional): gateway IoT y servidor local.
