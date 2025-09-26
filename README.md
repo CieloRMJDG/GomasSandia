@@ -11,22 +11,22 @@ Ahora se explicara el hadware mas a fondo
 
 ### Sensores 
 
-Humedad del suelo (capacitivos): control de riego.
-pH y conductividad eléctrica (EC): control de fertilización.
-Temperatura y humedad ambiental (BME280/DHT22): regulación del microclima.
-Intensidad lumínica (BH1750): control de sombreamiento y luz suplementaria.
-CO₂ (MH-Z19): optimización de fotosíntesis.
-Refractómetro manual (°Brix): validación de dulzor en laboratorio de campo.
+Humedad del suelo (capacitivos): control de riego. <br>
+pH y conductividad eléctrica (EC): control de fertilización.<br>
+Temperatura y humedad ambiental (BME280/DHT22): regulación del microclima.<br>
+Intensidad lumínica (BH1750): control de sombreamiento y luz suplementaria.<br>
+CO₂ (MH-Z19): optimización de fotosíntesis.<br>
+Refractómetro manual (°Brix): validación de dulzor en laboratorio de campo.<br>
 
 ### Actuadores
 
-Válvulas solenoides para riego por goteo.
-Bombas peristálticas para fertirrigación.
-Ventiladores y extractores para control de temperatura.
-Sombrillas motorizadas o mallas retráctiles.
-Relés de control y fuente de alimentación segura.
+Válvulas solenoides para riego por goteo.<br>
+Bombas peristálticas para fertirrigación.<br>
+Ventiladores y extractores para control de temperatura.<br>
+Sombrillas motorizadas o mallas retráctiles.<br>
+Relés de control y fuente de alimentación segura.<br>
 
 ### Controladores
 
-ESP32: lectura de sensores y control de actuadores.
-Raspberry Pi (opcional): gateway IoT y servidor local.
+ESP32: lectura de sensores y control de actuadores.<br>
+Raspberry Pi (opcional): gateway IoT y servidor local.<br>
