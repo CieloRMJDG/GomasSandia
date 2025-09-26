@@ -105,3 +105,35 @@ Raspberry Pi (opcional): gateway IoT y servidor local.<br>
 | Caja estanca / montaje                     |    1     |                   40   |            40  | Protección de electrónica                  |
 | **Total aproximado**                      |          |                        | **665**        | Precios aproximados — pueden variar        |
 
+
+
+## Software
+
+El software es el núcleo que permitirá integrar los sensores, actuadores y el control del invernadero, asegurando que la producción de sandías sea óptima para la elaboración de gomas. Este sistema estará basado en tecnologías IoT (Internet of Things) y se compondrá de varias capas.
+
+### Arquitectura
+- **Capa de adquisición**: Nodos ESP32 que leen los sensores (humedad, pH, temperatura, luz, CO₂) y controlan actuadores (riego, fertirrigación, ventilación).
+- **Capa de procesamiento**: Servidor en **Node.js con TypeScript**, encargado de recibir datos vía **MQTT**, almacenarlos en una base de datos (PostgreSQL/InfluxDB) y ejecutar reglas de control.
+- **Capa de visualización**: Dashboard web en **React (TypeScript)** con gráficas y reportes para monitorear las condiciones del invernadero.
+- **Automatización**: Reglas definidas en **Node-RED** o en el backend para activar automáticamente riego, fertilización o ventilación.
+
+### Funcionalidades
+-  Monitoreo en tiempo real de variables críticas: temperatura, humedad, pH y EC.  
+-  Control automático del riego y fertilización.  
+-  Alertas enviadas a WhatsApp o correo cuando una variable salga de rango.  
+- Gráficas históricas para analizar tendencias de cultivo.  
+-  Control manual desde el dashboard para pruebas o ajustes en campo.  
+
+### Flujo de datos
+1. Los nodos **ESP32** toman lecturas de los sensores.  
+2. Los datos se envían en formato **JSON** a través de **MQTT** a un broker central.  
+3. El backend en **Node.js** procesa y almacena los datos en la base de datos.  
+4. El **dashboard en React** consulta el backend y muestra la información en tiempo real.  
+5. Cuando los valores superan límites predefinidos, el sistema activa los actuadores o genera alertas al usuario.  
+
+### Tecnologías Clave
+- **Lenguaje principal**: TypeScript  
+- **Backend**: Node.js con Express
+- **Frontend**: React con TypeScript y librerías de gráficas (Recharts, Chart.js)  
+- **Automatización**: Node-RED para flujos lógicos 
+
