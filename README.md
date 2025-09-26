@@ -137,3 +137,5 @@ El software es el núcleo que permitirá integrar los sensores, actuadores y el 
 - **Frontend**: React con TypeScript y librerías de gráficas (Recharts, Chart.js)  
 - **Automatización**: Node-RED para flujos lógicos 
 
+### Despliegue hosting
+-**Se eligió Vercel como hosting porque ofrece calidad, velocidad y compatibilidad total con React y TypeScript, tecnologías base del proyecto. Aunque el plan Pro tiene un costo aproximado de 20 USD mensuales, esta inversión resulta adecuada, ya que garantiza un servicio confiable, accesible desde cualquier lugar y con herramientas que facilitan la escalabilidad del sistema. De esta manera, se asegura que el emprendimiento cuente con una plataforma tecnológica sólida para crecer sin limitaciones.
